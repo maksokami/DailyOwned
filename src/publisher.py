@@ -35,8 +35,10 @@ def publish(config: dict, dry_run: bool = False) -> bool:
         )
         return False
 
-    # Copy HTML
-    dest = pages_repo / "index.html"
+    # Copy HTML to docs/ folder for GitHub Pages
+    docs_dir = pages_repo / "docs"
+    docs_dir.mkdir(exist_ok=True)
+    dest = docs_dir / "index.html"
     shutil.copy2(output_html, dest)
     logger.info(f"Copied {output_html} → {dest}")
 

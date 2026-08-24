@@ -1,0 +1,2428 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Owned — Monday, August 24 2026 at 04:16 UTC</title>
+  
+  <!-- Anti-FOUC script for dark mode persistence -->
+  <script>
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+
+    function toggleTheme() {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        localStorage.theme = 'light';
+      } else {
+        document.documentElement.classList.add('dark');
+        localStorage.theme = 'dark';
+      }
+    }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50:  '#f0fdf4',
+              100: '#dcfce7',
+              400: '#4ade80',
+              500: '#22c55e',
+              600: '#16a34a',
+              900: '#14532d',
+            },
+            surface: {
+              900: '#0a0e14',
+              800: '#111827',
+              700: '#1f2937',
+              600: '#374151',
+              500: '#4b5563',
+            }
+          },
+          fontFamily: {
+            mono: ['JetBrains Mono', 'Fira Code', 'Consolas', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .tag-badge { display: inline-block; font-size: 0.65rem; padding: 1px 6px; border-radius: 4px; }
+    .score-bar { height: 3px; border-radius: 2px; transition: width 0.3s ease; }
+    .card-hover { transition: transform 0.15s ease, box-shadow 0.15s ease; }
+    .card-hover:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+    .impact-high   { background: #ef4444; }
+    .impact-medium { background: #f59e0b; }
+    .impact-low    { background: #6b7280; }
+    .source-pill { font-size: 0.7rem; font-family: 'JetBrains Mono', monospace; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #111827; }
+    ::-webkit-scrollbar-thumb { background: #374151; border-radius: 3px; }
+    .glow-green { box-shadow: 0 0 20px rgba(34,197,94,0.15); }
+    .glow-amber { box-shadow: 0 0 20px rgba(245,158,11,0.15); }
+  </style>
+</head>
+
+<body class="bg-surface-900 text-gray-200 min-h-screen">
+
+  <!-- ===== HEADER ===== -->
+  <header class="border-b border-surface-700 bg-surface-800 sticky top-0 z-50 backdrop-blur">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="text-brand-500 text-2xl font-bold font-mono">⬡</span>
+        <div>
+          <h1 class="text-white font-bold text-lg leading-tight">Daily Owned</h1>
+          <p class="text-gray-400 text-xs">Daily curated cybersecurity news</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <div class="text-right hidden sm:block">
+          <p class="text-xs text-gray-400">Generated</p>
+          <p class="text-xs text-gray-300 font-mono">Monday, August 24 2026 at 04:16 UTC</p>
+        </div>
+        <div class="flex gap-2 text-xs">
+          <span class="bg-surface-700 px-2 py-1 rounded text-gray-300">
+            📡 14 sources
+          </span>
+          <span class="bg-surface-700 px-2 py-1 rounded text-gray-300">
+            📰 69 articles
+          </span>
+          <span class="bg-surface-700 px-2 py-1 rounded text-gray-300">
+            ⏱ 72h window
+          </span>
+        </div>
+        <button onclick="toggleTheme()"
+                class="text-gray-400 hover:text-white text-lg p-1 rounded hover:bg-surface-700 transition-colors" 
+                title="Toggle dark/light mode">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+
+    <!-- ===== TOP ANALYSIS: Two Columns ===== -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
+
+      <!-- TOP CITED -->
+      <div class="bg-surface-800 rounded-xl border border-brand-500/30 glow-green overflow-hidden">
+        <div class="px-5 py-4 border-b border-surface-700 flex items-center gap-2">
+          <div>
+            <h2 class="text-white font-bold text-base">Top Cited Stories</h2>
+          </div>
+        </div>
+        <div class="divide-y divide-surface-700">
+          
+            
+            <div class="px-5 py-4 card-hover">
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="text-xs font-mono text-gray-500">#1</span>
+                  
+                  <span class="tag-badge bg-amber-900/50 text-amber-400 border border-amber-800">
+                    Medium Impact
+                  </span>
+                  <span class="tag-badge bg-brand-900/50 text-brand-400 border border-brand-800">
+                    6 sources
+                  </span>
+                </div>
+              </div>
+              <h3 class="text-white font-semibold text-sm mb-1">
+                <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-warns-of-max-severity-entra-id-flaw-exploited-in-attacks/" target="_blank" rel="noopener"
+                   class="hover:text-brand-400 transition-colors">
+                  Story: Microsoft Patches Exploited Entra ID Vulnerability
+                </a>
+              </h3>
+              
+              <p class="text-gray-400 text-xs leading-relaxed mb-2">Covered by 6 sources.</p>
+              
+              <div class="flex flex-wrap gap-1 mt-2">
+                
+                <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">BleepingComputer</span>
+                
+                <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">CISA Advisories</span>
+                
+                <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">HelpNet Security</span>
+                
+                <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">Security Week</span>
+                
+                <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">The Hacker News</span>
+                
+                <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">The Register</span>
+                
+              </div>
+              <!-- Sub-articles -->
+              <div class="mt-3 space-y-1">
+                
+                <a href="https://www.securityweek.com/microsoft-rolls-out-22-fresh-security-patches/" target="_blank" rel="noopener"
+                   class="flex items-start gap-2 text-xs text-gray-400 hover:text-gray-200 transition-colors group">
+                  <span class="text-surface-500 group-hover:text-brand-500 mt-0.5">›</span>
+                  <span class="flex-1 truncate">Microsoft Patches Exploited Entra ID Vulnerability</span>
+                  <span class="text-surface-500 shrink-0 font-mono">Security Week</span>
+                </a>
+                
+                <a href="https://www.securityweek.com/cisa-urges-immediate-patching-of-exploited-trueconf-vulnerabilities/" target="_blank" rel="noopener"
+                   class="flex items-start gap-2 text-xs text-gray-400 hover:text-gray-200 transition-colors group">
+                  <span class="text-surface-500 group-hover:text-brand-500 mt-0.5">›</span>
+                  <span class="flex-1 truncate">CISA Urges Immediate Patching of Exploited TrueConf Vulnerabilities</span>
+                  <span class="text-surface-500 shrink-0 font-mono">Security Week</span>
+                </a>
+                
+                <a href="https://www.helpnetsecurity.com/2026/08/21/microsoft-entra-id-vulnerability-cve-2026-69836/" target="_blank" rel="noopener"
+                   class="flex items-start gap-2 text-xs text-gray-400 hover:text-gray-200 transition-colors group">
+                  <span class="text-surface-500 group-hover:text-brand-500 mt-0.5">›</span>
+                  <span class="flex-1 truncate">Critical Microsoft Entra ID vulnerability exploited in the wild (CVE-2026-69836)</span>
+                  <span class="text-surface-500 shrink-0 font-mono">HelpNet Security</span>
+                </a>
+                
+                <a href="https://www.helpnetsecurity.com/2026/08/21/citrix-netscaler-gateway-cve-2026-19490/" target="_blank" rel="noopener"
+                   class="flex items-start gap-2 text-xs text-gray-400 hover:text-gray-200 transition-colors group">
+                  <span class="text-surface-500 group-hover:text-brand-500 mt-0.5">›</span>
+                  <span class="flex-1 truncate">Citrix urges customers to fix critical NetScaler authentication bypass (CVE-2026-19490)</span>
+                  <span class="text-surface-500 shrink-0 font-mono">HelpNet Security</span>
+                </a>
+                
+                
+                <p class="text-xs text-surface-500 pl-4">+ 6 more articles</p>
+                
+              </div>
+            </div>
+            
+            <div class="px-5 py-4 card-hover">
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="text-xs font-mono text-gray-500">#2</span>
+                  
+                  <span class="tag-badge bg-amber-900/50 text-amber-400 border border-amber-800">
+                    Medium Impact
+                  </span>
+                  <span class="tag-badge bg-brand-900/50 text-brand-400 border border-brand-800">
+                    4 sources
+                  </span>
+                </div>
+              </div>
+              <h3 class="text-white font-semibold text-sm mb-1">
+                <a href="https://therecord.media/canada-hospital-for-sick-children-attacked-again-employee-data" target="_blank" rel="noopener"
+                   class="hover:text-brand-400 transition-colors">
+                  Story: SickKids children’s hospital bandages up careers website aft
+                </a>
+              </h3>
+              
+              <p class="text-gray-400 text-xs leading-relaxed mb-2">Covered by 4 sources.</p>
+              
+              <div class="flex flex-wrap gap-1 mt-2">
+                
+                <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">BleepingComputer</span>
+                
+                <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">Malwarebytes Labs</span>
+                
+                <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">The Record</span>
+                
+                <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">The Register</span>
+                
+              </div>
+              <!-- Sub-articles -->
+              <div class="mt-3 space-y-1">
+                
+                <a href="https://www.theregister.com/cyber-crime/2026/08/21/sickkids-childrens-hospital-bandages-up-careers-website-after-intruder-breaks-in/5291098" target="_blank" rel="noopener"
+                   class="flex items-start gap-2 text-xs text-gray-400 hover:text-gray-200 transition-colors group">
+                  <span class="text-surface-500 group-hover:text-brand-500 mt-0.5">›</span>
+                  <span class="flex-1 truncate">SickKids children’s hospital bandages up careers website after intruder breaks in</span>
+                  <span class="text-surface-500 shrink-0 font-mono">The Register</span>
+                </a>
+                
+                <a href="https://therecord.media/canada-hospital-for-sick-children-attacked-again-employee-data" target="_blank" rel="noopener"
+                   class="flex items-start gap-2 text-xs text-gray-400 hover:text-gray-200 transition-colors group">
+                  <span class="text-surface-500 group-hover:text-brand-500 mt-0.5">›</span>
+                  <span class="flex-1 truncate">Canada’s Hospital for Sick Children attacked by cybercriminals again as employee data stolen</span>
+                  <span class="text-surface-500 shrink-0 font-mono">The Record</span>
+                </a>
+                
+                <a href="https://www.bleepingcomputer.com/news/security/sickkids-data-breach-exposes-employee-and-job-applicant-info/" target="_blank" rel="noopener"
+                   class="flex items-start gap-2 text-xs text-gray-400 hover:text-gray-200 transition-colors group">
+                  <span class="text-surface-500 group-hover:text-brand-500 mt-0.5">›</span>
+                  <span class="flex-1 truncate">SickKids data breach exposes employee and job applicant info</span>
+                  <span class="text-surface-500 shrink-0 font-mono">BleepingComputer</span>
+                </a>
+                
+                <a href="https://www.malwarebytes.com/blog/news/2026/08/medical-records-ssns-and-bank-details-exposed-in-carecloud-data-breach" target="_blank" rel="noopener"
+                   class="flex items-start gap-2 text-xs text-gray-400 hover:text-gray-200 transition-colors group">
+                  <span class="text-surface-500 group-hover:text-brand-500 mt-0.5">›</span>
+                  <span class="flex-1 truncate">Medical records, SSNs, and bank details exposed in CareCloud data breach</span>
+                  <span class="text-surface-500 shrink-0 font-mono">Malwarebytes Labs</span>
+                </a>
+                
+                
+              </div>
+            </div>
+            
+            <div class="px-5 py-4 card-hover">
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="text-xs font-mono text-gray-500">#3</span>
+                  
+                  <span class="tag-badge bg-amber-900/50 text-amber-400 border border-amber-800">
+                    Medium Impact
+                  </span>
+                  <span class="tag-badge bg-brand-900/50 text-brand-400 border border-brand-800">
+                    3 sources
+                  </span>
+                </div>
+              </div>
+              <h3 class="text-white font-semibold text-sm mb-1">
+                <a href="https://www.bleepingcomputer.com/news/security/new-synkloader-malware-pushed-in-microsoft-teams-phishing-campaign/" target="_blank" rel="noopener"
+                   class="hover:text-brand-400 transition-colors">
+                  Story: Android Car Malware Spreads Through Built-In Updaters for Ad
+                </a>
+              </h3>
+              
+              <p class="text-gray-400 text-xs leading-relaxed mb-2">Covered by 3 sources.</p>
+              
+              <div class="flex flex-wrap gap-1 mt-2">
+                
+                <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">BleepingComputer</span>
+                
+                <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">Securelist (Kaspersky)</span>
+                
+                <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">The Hacker News</span>
+                
+              </div>
+              <!-- Sub-articles -->
+              <div class="mt-3 space-y-1">
+                
+                <a href="https://thehackernews.com/2026/08/android-car-malware-spreads-through.html" target="_blank" rel="noopener"
+                   class="flex items-start gap-2 text-xs text-gray-400 hover:text-gray-200 transition-colors group">
+                  <span class="text-surface-500 group-hover:text-brand-500 mt-0.5">›</span>
+                  <span class="flex-1 truncate">Android Car Malware Spreads Through Built-In Updaters for Ad Fraud, Proxy Botnet</span>
+                  <span class="text-surface-500 shrink-0 font-mono">The Hacker News</span>
+                </a>
+                
+                <a href="https://www.bleepingcomputer.com/news/security/toxicpanda-android-malware-uses-vpn-permissions-to-block-google-play/" target="_blank" rel="noopener"
+                   class="flex items-start gap-2 text-xs text-gray-400 hover:text-gray-200 transition-colors group">
+                  <span class="text-surface-500 group-hover:text-brand-500 mt-0.5">›</span>
+                  <span class="flex-1 truncate">ToxicPanda Android malware uses VPN permissions to block Google Play</span>
+                  <span class="text-surface-500 shrink-0 font-mono">BleepingComputer</span>
+                </a>
+                
+                <a href="https://www.bleepingcomputer.com/news/security/hackers-infect-android-car-head-units-with-proxy-botnet-malware/" target="_blank" rel="noopener"
+                   class="flex items-start gap-2 text-xs text-gray-400 hover:text-gray-200 transition-colors group">
+                  <span class="text-surface-500 group-hover:text-brand-500 mt-0.5">›</span>
+                  <span class="flex-1 truncate">Hackers infect Android car head units with proxy botnet malware</span>
+                  <span class="text-surface-500 shrink-0 font-mono">BleepingComputer</span>
+                </a>
+                
+                <a href="https://www.bleepingcomputer.com/news/security/new-synkloader-malware-pushed-in-microsoft-teams-phishing-campaign/" target="_blank" rel="noopener"
+                   class="flex items-start gap-2 text-xs text-gray-400 hover:text-gray-200 transition-colors group">
+                  <span class="text-surface-500 group-hover:text-brand-500 mt-0.5">›</span>
+                  <span class="flex-1 truncate">New SynkLoader malware pushed in Microsoft Teams phishing campaign</span>
+                  <span class="text-surface-500 shrink-0 font-mono">BleepingComputer</span>
+                </a>
+                
+                
+                <p class="text-xs text-surface-500 pl-4">+ 2 more articles</p>
+                
+              </div>
+            </div>
+            
+            <div class="px-5 py-4 card-hover">
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="text-xs font-mono text-gray-500">#4</span>
+                  
+                  <span class="tag-badge bg-amber-900/50 text-amber-400 border border-amber-800">
+                    Medium Impact
+                  </span>
+                  <span class="tag-badge bg-brand-900/50 text-brand-400 border border-brand-800">
+                    2 sources
+                  </span>
+                </div>
+              </div>
+              <h3 class="text-white font-semibold text-sm mb-1">
+                <a href="https://www.theregister.com/security/2026/08/21/cisco-bug-severity-warning-reads-like-olympic-gymnastics-scores-10-10-99-96-and-75/5290838" target="_blank" rel="noopener"
+                   class="hover:text-brand-400 transition-colors">
+                  Story: Cisco bug severity warning reads like Olympic gymnastics sco
+                </a>
+              </h3>
+              
+              <p class="text-gray-400 text-xs leading-relaxed mb-2">Covered by 2 sources.</p>
+              
+              <div class="flex flex-wrap gap-1 mt-2">
+                
+                <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">The Hacker News</span>
+                
+                <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">The Register</span>
+                
+              </div>
+              <!-- Sub-articles -->
+              <div class="mt-3 space-y-1">
+                
+                <a href="https://www.theregister.com/security/2026/08/21/cisco-bug-severity-warning-reads-like-olympic-gymnastics-scores-10-10-99-96-and-75/5290838" target="_blank" rel="noopener"
+                   class="flex items-start gap-2 text-xs text-gray-400 hover:text-gray-200 transition-colors group">
+                  <span class="text-surface-500 group-hover:text-brand-500 mt-0.5">›</span>
+                  <span class="flex-1 truncate">Cisco bug severity warning reads like Olympic gymnastics scores: 10, 10, 9.9, 9.6, and 7.5.</span>
+                  <span class="text-surface-500 shrink-0 font-mono">The Register</span>
+                </a>
+                
+                <a href="https://thehackernews.com/2026/08/cisco-patches-nine-crosswork-and-secure.html" target="_blank" rel="noopener"
+                   class="flex items-start gap-2 text-xs text-gray-400 hover:text-gray-200 transition-colors group">
+                  <span class="text-surface-500 group-hover:text-brand-500 mt-0.5">›</span>
+                  <span class="flex-1 truncate">Cisco Patches Nine Crosswork and Secure Workload Flaws, Five Scoring CVSS 10.0</span>
+                  <span class="text-surface-500 shrink-0 font-mono">The Hacker News</span>
+                </a>
+                
+                
+              </div>
+            </div>
+            
+            <div class="px-5 py-4 card-hover">
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="text-xs font-mono text-gray-500">#5</span>
+                  
+                  <span class="tag-badge bg-amber-900/50 text-amber-400 border border-amber-800">
+                    Medium Impact
+                  </span>
+                  <span class="tag-badge bg-brand-900/50 text-brand-400 border border-brand-800">
+                    2 sources
+                  </span>
+                </div>
+              </div>
+              <h3 class="text-white font-semibold text-sm mb-1">
+                <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-rolls-out-classic-outlook-theme-for-new-outlook-users/" target="_blank" rel="noopener"
+                   class="hover:text-brand-400 transition-colors">
+                  Story: Microsoft lets you swap New Outlook's looks with the face of
+                </a>
+              </h3>
+              
+              <p class="text-gray-400 text-xs leading-relaxed mb-2">Covered by 2 sources.</p>
+              
+              <div class="flex flex-wrap gap-1 mt-2">
+                
+                <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">BleepingComputer</span>
+                
+                <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">The Register</span>
+                
+              </div>
+              <!-- Sub-articles -->
+              <div class="mt-3 space-y-1">
+                
+                <a href="https://www.theregister.com/applications/2026/08/21/microsoft-lets-you-swap-new-outlooks-looks-with-the-face-of-outlook-classic/5290948" target="_blank" rel="noopener"
+                   class="flex items-start gap-2 text-xs text-gray-400 hover:text-gray-200 transition-colors group">
+                  <span class="text-surface-500 group-hover:text-brand-500 mt-0.5">›</span>
+                  <span class="flex-1 truncate">Microsoft lets you swap New Outlook's looks with the face of Outlook Classic</span>
+                  <span class="text-surface-500 shrink-0 font-mono">The Register</span>
+                </a>
+                
+                <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-rolls-out-classic-outlook-theme-for-new-outlook-users/" target="_blank" rel="noopener"
+                   class="flex items-start gap-2 text-xs text-gray-400 hover:text-gray-200 transition-colors group">
+                  <span class="text-surface-500 group-hover:text-brand-500 mt-0.5">›</span>
+                  <span class="flex-1 truncate">Microsoft rolls out Classic Outlook theme for New Outlook users</span>
+                  <span class="text-surface-500 shrink-0 font-mono">BleepingComputer</span>
+                </a>
+                
+                
+              </div>
+            </div>
+            
+          
+        </div>
+      </div>
+
+      <!-- TOP BLINDSPOTS -->
+      <div class="bg-surface-800 rounded-xl border border-amber-500/30 glow-amber overflow-hidden">
+        <div class="px-5 py-4 border-b border-surface-700 flex items-center gap-2">
+          <div>
+            <h2 class="text-white font-bold text-base">Top Blind Spots</h2>
+            <p class="text-gray-400 text-xs">High-relevance stories with minimal mainstream coverage</p>
+          </div>
+        </div>
+        <div class="divide-y divide-surface-700">
+          
+            
+            <div class="px-5 py-4 card-hover">
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-mono text-gray-500">#1</span>
+                  <span class="tag-badge bg-amber-900/50 text-amber-400 border border-amber-800">Blindspot</span>
+                  <span class="tag-badge bg-surface-700 text-gray-400 border border-surface-600">
+                    70% match
+                  </span>
+                </div>
+              </div>
+              <h3 class="text-white font-semibold text-sm mb-1">
+                <a href="https://www.helpnetsecurity.com/2026/08/21/ai-brand-impersonation-malware-malware-research/" target="_blank" rel="noopener"
+                   class="hover:text-amber-400 transition-colors">
+                  Attackers impersonate popular AI brands to spread malware
+                </a>
+              </h3>
+              
+              <p class="text-gray-400 text-xs leading-relaxed mb-2">Unique coverage — worth reviewing.</p>
+              
+              <div class="flex items-center gap-2 mt-2">
+                <span class="source-pill bg-surface-700 text-amber-400/70 px-2 py-0.5 rounded">HelpNet Security</span>
+                
+              </div>
+              <!-- Relevance score bar -->
+              <div class="mt-2">
+                <div class="flex justify-between text-xs text-gray-600 mb-1">
+                  <span>Relevance</span>
+                  <span class="font-mono">0.70</span>
+                </div>
+                <div class="bg-surface-700 rounded h-1">
+                  <div class="score-bar bg-amber-500 rounded"
+                       style="width: 70.21422386169434%"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="px-5 py-4 card-hover">
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-mono text-gray-500">#2</span>
+                  <span class="tag-badge bg-amber-900/50 text-amber-400 border border-amber-800">Blindspot</span>
+                  <span class="tag-badge bg-surface-700 text-gray-400 border border-surface-600">
+                    69% match
+                  </span>
+                </div>
+              </div>
+              <h3 class="text-white font-semibold text-sm mb-1">
+                <a href="https://www.theregister.com/security/2026/08/21/hackers-poison-popular-rust-crates-to-steal-developers-credentials/5291075" target="_blank" rel="noopener"
+                   class="hover:text-amber-400 transition-colors">
+                  Hackers poison popular Rust crates to steal developers' credentials
+                </a>
+              </h3>
+              
+              <p class="text-gray-400 text-xs leading-relaxed mb-2">Unique coverage — worth reviewing.</p>
+              
+              <div class="flex items-center gap-2 mt-2">
+                <span class="source-pill bg-surface-700 text-amber-400/70 px-2 py-0.5 rounded">The Register</span>
+                
+              </div>
+              <!-- Relevance score bar -->
+              <div class="mt-2">
+                <div class="flex justify-between text-xs text-gray-600 mb-1">
+                  <span>Relevance</span>
+                  <span class="font-mono">0.69</span>
+                </div>
+                <div class="bg-surface-700 rounded h-1">
+                  <div class="score-bar bg-amber-500 rounded"
+                       style="width: 69.25119757652283%"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="px-5 py-4 card-hover">
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-mono text-gray-500">#3</span>
+                  <span class="tag-badge bg-amber-900/50 text-amber-400 border border-amber-800">Blindspot</span>
+                  <span class="tag-badge bg-surface-700 text-gray-400 border border-surface-600">
+                    68% match
+                  </span>
+                </div>
+              </div>
+              <h3 class="text-white font-semibold text-sm mb-1">
+                <a href="https://www.theregister.com/security/2026/08/22/aws-security-makes-an-inscrutable-choice-corey-quinn/5291446" target="_blank" rel="noopener"
+                   class="hover:text-amber-400 transition-colors">
+                  AWS Security makes an inscrutable choice
+                </a>
+              </h3>
+              
+              <p class="text-gray-400 text-xs leading-relaxed mb-2">Unique coverage — worth reviewing.</p>
+              
+              <div class="flex items-center gap-2 mt-2">
+                <span class="source-pill bg-surface-700 text-amber-400/70 px-2 py-0.5 rounded">The Register</span>
+                
+              </div>
+              <!-- Relevance score bar -->
+              <div class="mt-2">
+                <div class="flex justify-between text-xs text-gray-600 mb-1">
+                  <span>Relevance</span>
+                  <span class="font-mono">0.68</span>
+                </div>
+                <div class="bg-surface-700 rounded h-1">
+                  <div class="score-bar bg-amber-500 rounded"
+                       style="width: 67.79882311820984%"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="px-5 py-4 card-hover">
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-mono text-gray-500">#4</span>
+                  <span class="tag-badge bg-amber-900/50 text-amber-400 border border-amber-800">Blindspot</span>
+                  <span class="tag-badge bg-surface-700 text-gray-400 border border-surface-600">
+                    67% match
+                  </span>
+                </div>
+              </div>
+              <h3 class="text-white font-semibold text-sm mb-1">
+                <a href="https://thehackernews.com/2026/08/14-trojanized-npm-packages-drop-redc2.html" target="_blank" rel="noopener"
+                   class="hover:text-amber-400 transition-colors">
+                  14 Trojanized npm Packages Drop RedC2 4.0 Linux Backdoor With AI-Assisted C2
+                </a>
+              </h3>
+              
+              <p class="text-gray-400 text-xs leading-relaxed mb-2">Unique coverage — worth reviewing.</p>
+              
+              <div class="flex items-center gap-2 mt-2">
+                <span class="source-pill bg-surface-700 text-amber-400/70 px-2 py-0.5 rounded">The Hacker News</span>
+                
+              </div>
+              <!-- Relevance score bar -->
+              <div class="mt-2">
+                <div class="flex justify-between text-xs text-gray-600 mb-1">
+                  <span>Relevance</span>
+                  <span class="font-mono">0.67</span>
+                </div>
+                <div class="bg-surface-700 rounded h-1">
+                  <div class="score-bar bg-amber-500 rounded"
+                       style="width: 67.31361746788025%"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="px-5 py-4 card-hover">
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-mono text-gray-500">#5</span>
+                  <span class="tag-badge bg-amber-900/50 text-amber-400 border border-amber-800">Blindspot</span>
+                  <span class="tag-badge bg-surface-700 text-gray-400 border border-surface-600">
+                    67% match
+                  </span>
+                </div>
+              </div>
+              <h3 class="text-white font-semibold text-sm mb-1">
+                <a href="https://www.helpnetsecurity.com/2026/08/23/week-in-review-records-allegedly-stolen-from-azure-tenants-medusa-ransomware-hits-500-orgs/" target="_blank" rel="noopener"
+                   class="hover:text-amber-400 transition-colors">
+                  Week in review: Records allegedly stolen from Azure tenants, Medusa ransomware hits 500+ orgs
+                </a>
+              </h3>
+              
+              <p class="text-gray-400 text-xs leading-relaxed mb-2">Unique coverage — worth reviewing.</p>
+              
+              <div class="flex items-center gap-2 mt-2">
+                <span class="source-pill bg-surface-700 text-amber-400/70 px-2 py-0.5 rounded">HelpNet Security</span>
+                
+              </div>
+              <!-- Relevance score bar -->
+              <div class="mt-2">
+                <div class="flex justify-between text-xs text-gray-600 mb-1">
+                  <span>Relevance</span>
+                  <span class="font-mono">0.67</span>
+                </div>
+                <div class="bg-surface-700 rounded h-1">
+                  <div class="score-bar bg-amber-500 rounded"
+                       style="width: 66.96801781654358%"></div>
+                </div>
+              </div>
+            </div>
+            
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GENERAL FEED ===== -->
+    <section>
+      <div class="flex items-center gap-3 mb-4">
+        <h2 class="text-white font-bold text-base">Full Feed</h2>
+        <span class="text-xs text-gray-500">40 articles, sorted by relevance</span>
+        <div class="flex-1 border-t border-surface-700"></div>
+      </div>
+
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              Schneier on Security
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                67%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.schneier.com/blog/archives/2026/08/more-incidents-of-ais-going-rogue-in-cybersecurity-challenges.html" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              More Incidents of AIs Going Rogue in Cybersecurity Challenges
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            The AI Security Institute has a new report of AI systems engaging in &#8220;unsanctioned behavior&#8221;&#8212;what I have been calling &#8220; genie…
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 66.64413213729858%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 09:42 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              The Register
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                64%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.theregister.com/patches/2026/08/21/homeland-security-cybercops-say-patch-trueconf-russias-zoom-if-youre-using-it/5291156" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              Homeland security cybercops say patch TrueConf (Russia's Zoom) if you're using it
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            Ukrainian hacktivists exploiting the bugs, but TrueConf's reach stretches well beyond home turf
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 64.23653364181519%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 16:29 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              BleepingComputer
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                64%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.bleepingcomputer.com/news/security/named-pipes-under-attack-securing-windows-interprocess-communication/" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              Named Pipes Under Attack: Securing Windows Interprocess Communication
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            Windows named pipes provide fast interprocess communication, but weak access controls can expose privileged services to untrusted processes.…
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 64.00189995765686%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 22, 13:00 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              The Register
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                63%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.theregister.com/cyber-crime/2026/08/21/10k-phishing-kit-claims-it-can-plant-rogue-passkeys-for-persistent-access-to-pwned-accounts/5291006" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              $10K phishing kit claims it can plant rogue passkeys for persistent access to pwned accounts
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            Seller's demos show a browser-in-the-middle attack adding credentials seconds after authentication
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 63.36306929588318%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 12:18 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              Dark Reading
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                63%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.darkreading.com/application-security/owasp-flags-top-ai-skill-risks-security-blueprint" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              OWASP Flags Top AI Skill Risks in New Security Blueprint
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            The Open Worldwide Application Security Project has a brand-new top 10 security list tailored for the modern era, and it debuts a Universal Skill…
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 63.0063533782959%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 17:36 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              BleepingComputer
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                63%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.bleepingcomputer.com/news/security/hundreds-of-leaked-aws-keys-give-full-control-over-corporate-accounts/" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              Hundreds of leaked AWS keys give full control over corporate accounts
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            More than 9,300 Amazon Web Services (AWS) access keys publicly exposed between August 2022 and August 2026 are still active and valid. [...]
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 62.98370957374573%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 15:55 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              The Register
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                62%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.theregister.com/security/2026/08/22/if-youre-not-using-ai-to-attack-your-own-systems-your-adversaries-will/5291346" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              If you're not using AI to attack your own systems, your adversaries will
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            Agents are also the new attack surface - cue defenders' existential angst
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 62.249475717544556%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 22, 15:02 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              Dark Reading
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                62%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.darkreading.com/cyber-risk/hardware-makers-implement-post-quantum-cryptography" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              Hardware Makers Implement Post-Quantum Cryptography as Security Threats Near
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            The coming threat of super-powerful computers capable of cracking today’s algorithms requires upgrading encryption now. Tech companies have begun…
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 62.217605113983154%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 13:10 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              BleepingComputer
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                61%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.bleepingcomputer.com/news/security/is-online-privacy-possible-how-digital-identities-can-help/" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              Is Online Privacy Possible? How Digital Identities Can Help
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            Using the same email, phone number, payment method, and other identifiers makes it easier for data brokers and attackers to profile your activity.…
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 61.32369041442871%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 14:00 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              Dark Reading
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                61%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.darkreading.com/ics-ot-security/how-emerging-industrial-protocol-family-put-ot-at-risk" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              How an Emerging Industrial Protocol Family Could Put OT at Risk
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            New research shows how attacks against some unprotected TSN protocols could allow attackers to disrupt or manipulate physical processes
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 61.22650504112244%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 20:24 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              The Record
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                61%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://therecord.media/russian-network-monitoring-firm-confirms-cyberattack-claimed-by-pro-ukraine-group" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              Russian network monitoring firm confirms cyberattack claimed by pro-Ukraine hackers
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            The statement came a day after a hacking group calling itself Black Spark claimed it had spent more than a month inside Microolap’s network and…
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 60.879456996917725%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 13:55 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              The Hacker News
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                61%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://thehackernews.com/2026/08/wazuh-and-ai-for-enhanced-soc-workflows.html" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              Wazuh and AI For Enhanced SOC Workflows
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            Artificial Intelligence (AI) has become one of this decade's defining technologies. From healthcare and finance to manufacturing and education,…
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 60.7357382774353%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 11:21 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              The Register
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                61%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.theregister.com/ai-and-ml/2026/08/21/ai-companies-are-burning-books-advocates-complain-to-ftc/5291299" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              AI companies are burning books, advocates complain to FTC
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            Fahrenheit 203, the temperature GPUs stop gorging on literature
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 60.647982358932495%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 20:23 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              The Register
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                61%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.theregister.com/ai-and-ml/2026/08/22/ai-slop-is-good-for-business-if-you-know-what-youre-doing/5291382" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              AI slop is good for business if you know what you're doing
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            Your irresponsibility is someone else's opportunity
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 60.641974210739136%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 22, 13:19 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              Security Week
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                61%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.securityweek.com/in-other-news-zombie-card-attack-t-mobile-cut-cable-to-stop-hackers-github-denies-ai-caused-bug/" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              In Other News: Zombie Card Attack, T-Mobile Cut Cable to Stop Hackers, GitHub Denies AI Caused Bug
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            Other noteworthy stories that might have slipped under the radar: Threema DDoS attack, Evooo1Bot Linux botnet, Crypto4A secures top-tier NIST…
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 60.623347759246826%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 15:11 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              Google Cloud Security Blog
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                60%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-sticking-to-security-fundamentals-in-the-ai-era/" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              Cloud CISO Perspectives: Sticking to security fundamentals in the AI era
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            Welcome to the first Cloud CISO Perspectives for August 2026. Today, Chris Betz explains why the AI era makes it more important than ever to lean…
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 60.04211902618408%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 16:00 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              The Register
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                60%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.theregister.com/systems/2026/08/22/cloverleaf-deal-is-latest-example-of-nvidia-using-its-war-chest-to-patch-cracks-in-the-ai-bubble/5291369" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              Cloverleaf deal is latest example of Nvidia using its war chest to patch cracks in the AI bubble
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            Nv's new chips need new datacenters, but you can't have bit barns without power
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 60.02006530761719%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 23:00 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              Security Week
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                60%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.securityweek.com/new-phishing-toolkit-uses-passkeys-to-maintain-access-after-password-resets/" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              New Phishing Toolkit Uses Passkeys to Maintain Access After Password Resets
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            Researchers say iAuthFlow V2 can register an attacker-controlled passkey, enabling persistent access even after passwords are changed and active…
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 59.552955627441406%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 14:22 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              Dark Reading
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                59%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.darkreading.com/application-security/openai-adds-controls-already" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              OpenAI Adds Controls That Should've Been There Already
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            The new AI security controls follow the Hugging Face incident last month, though many of these additions perhaps should have been in place prior to…
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 59.24692153930664%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 13:30 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              Unit 42 Insights Blog
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                59%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://unit42.paloaltonetworks.com/sdlc-supply-chain/" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              Connecting the Dots: Securing the Overlooked Corners of the Software Development Lifecycle (SDLC) Supply Chain
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            Attackers are targeting CI/CD pipelines and developer tools instead of application code, requiring total SDLC visibility and strict security controls…
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 58.88361930847168%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 23:00 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              HelpNet Security
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                59%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.helpnetsecurity.com/2026/08/21/gitlab-19-3-updates/" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              GitLab 19.3 helps enterprises scale agentic development securely
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            GitLab has announced updates that give enterprises more control as they scale agentic software development. GitLab Dedicated customers, who already…
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 58.59447717666626%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 07:12 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              BleepingComputer
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                59%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-blames-windows-gaming-issues-on-rgb-lighting-devices/" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              Microsoft blames Windows gaming issues on RGB lighting devices
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            Microsoft says ongoing issues causing games to crash or fail to launch after installing the August 2026 Windows updates may be caused by peripherals…
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 58.51693153381348%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 14:54 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              Schneier on Security
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                58%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.schneier.com/blog/archives/2026/08/ai-is-learning-to-write-genetic-code.html" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              AI Is Learning to Write Genetic Code
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            This sort of research is both exciting and terrifying: The two models in question were told to generate complete genomes for a viable…
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 58.38465690612793%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 16:51 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              HelpNet Security
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                58%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.helpnetsecurity.com/2026/08/21/phantom-bank-websites-fraud-research/" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              A $25 template helped scammers build hundreds of phantom bank domains
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            A phrase on a suspicious website turned into an investigation of phantom banks built to support scams, according to new research from Allure…
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 58.324599266052246%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 05:00 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              The Register
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                58%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.theregister.com/devops/2026/08/21/we-let-you-down-github-pledges-to-scale-up-before-developers-give-up/5291031" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              'We let you down': GitHub pledges to scale up before developers give up
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            CTO promises architectural overhaul following second outage of the month
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 58.12312364578247%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 13:15 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              The Register
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                58%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.theregister.com/networks/2026/08/21/wi-fi-7s-wpa3-protections-come-with-a-compatibility-catch/5289614" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              Wi-Fi 7's WPA3 protections come with a compatibility catch
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            CableLabs wants hardware makers to embrace a workaround that keeps legacy kit connected
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 57.693326473236084%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 09:14 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              The Hacker News
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                57%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://thehackernews.com/2026/08/microsoft-defenders-own-driver-can-be.html" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              Microsoft Defender's Own Driver Can Be Weaponized to Delete Security Software at Boot
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            Check Point Research has disclosed a technique that uses Microsoft Defender's own legitimately signed boot-time remediation driver to perform…
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 57.400429248809814%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 15:52 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              The Register
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                57%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.theregister.com/devops/2026/08/23/how-cursor-beat-gits-scalability-shortcomings/5291421" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              How Cursor beat Git's scalability shortcomings
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            S3 keeps the source of truth while local NVMe repositories do the latency-sensitive work
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 57.03126788139343%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 23, 13:45 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              Dark Reading
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                56%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.darkreading.com/cyber-risk/cyber-pros-help-city-hall" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              Calling on Cyber Pros to Help Defend City Hall
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            Government agencies with smaller budgets need support — and here's how you can help.
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 56.37395977973938%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 14:00 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              The Register
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                56%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.theregister.com/software/2026/08/21/developer-given-missionimpossible-fixing-rubbish-code-that-could-crash-a-city-simply-chose-not-to-accept-it/5290120" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              Developer given Mission:Impossible - fixing rubbish code that could crash a city - simply chose not to accept it
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            After imagining explosions, blackouts, and daring escapes, this techie decided the best thing to do was just not doing the job
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 55.95378875732422%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 06:30 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              HelpNet Security
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                56%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.helpnetsecurity.com/2026/08/21/axiad-pqc-migration-readiness-gaps-report/" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              Nearly half of enterprises have no one leading PQC migration
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            Enterprises believe they are prepared for the security challenges posed by quantum computing, but gaps in ownership, testing and visibility could…
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 55.75063228607178%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 04:30 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              The Register
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                56%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.theregister.com/saas/2026/08/21/salesforce-partners-not-seeing-meaningful-revenue-from-agentforce-ai-platform-report-says/5291167" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              Salesforce partners not seeing meaningful revenue from Agentforce AI platform, report says
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            Show us the money
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 55.72282671928406%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 20:50 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              Security Week
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                55%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.securityweek.com/encrypted-prompts-bypass-ai-safety-guardrails-in-grok-and-gemini/" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              Encrypted Prompts Bypass AI Safety Guardrails in Grok and Gemini
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            Researchers say the new ‘Cryptographic Context Injection’ technique conceals malicious instructions until they are decrypted inside a trusted…
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 54.827094078063965%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 14:34 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              HelpNet Security
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                54%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.helpnetsecurity.com/2026/08/24/aws-network-firewall-rule-hit-count-capability/" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              AWS makes it easier to spot firewall rules that have gone quiet
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            AWS Network Firewall’s rule hit count capability gives security teams visibility into which stateful firewall rules are matching traffic, helping…
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 54.21332120895386%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 24, 04:00 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              Security Week
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                54%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.securityweek.com/banking-trojans-manic-grandoreiro-toxicpanda-2-0-in-the-spotlight/" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              Banking Trojans Manic, Grandoreiro, ToxicPanda 2.0 in the Spotlight
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            The spyware-equipped Manic, a persistent Grandoreiro campaign in Latin America and Europe, and an expanded ToxicPanda 2.0 malware. The post Banking…
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 54.06806468963623%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 22, 08:30 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              Malwarebytes Labs
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                54%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.malwarebytes.com/blog/news/2026/08/zombie-card-an-expired-visa-credit-card-can-be-used-for-purchases" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              Zombie Card: An expired Visa credit card can be used for purchases
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            Scientific research showed that the expiration date on some Visa credit cards can be manipulated in so-called Zombie Card attacks.
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 53.991228342056274%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 14:03 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              Security Week
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                53%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.securityweek.com/critical-isolated-vm-vulnerability-leads-to-rce-on-host/" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              Critical Isolated-vm Vulnerability Leads to RCE on Host
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            The type confusion bug can lead to V8 sandbox escape and control-flow hijacking of the host process. The post Critical Isolated-vm Vulnerability…
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 52.88909077644348%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 12:26 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              The Register
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                53%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.theregister.com/networks/2026/08/21/ee-invites-mobile-users-to-live-life-in-the-5g-fast-lane-for-a-price/5290303" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              EE invites mobile users to live life in the 5G Fast Lane – for a price
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            Network slicing offers a prioritized experience for those prepared to pay for a premium monthly plan
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 52.80191898345947%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 07:44 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              EFF Deeplinks
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                53%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.eff.org/deeplinks/2026/08/eff-and-civil-society-groups-call-nottinghamshire-police-halt-live-face" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              EFF and Civil Society Groups Call on Nottinghamshire Police to Halt Live Face Recognition
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            This week, EFF, along with Big Brother Watch, Defend Digital Me, Liberty, Open Rights Group, Race Equality First, Statewatch, and Stopwatch, wrote to…
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 52.55035161972046%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 16:03 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              Security Week
+            </span>
+            <div class="flex items-center gap-1">
+              
+              <span class="text-xs font-mono text-gray-600">
+                52%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="https://www.securityweek.com/rust-supply-chain-attack-linked-to-north-korean-hackers/" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              Rust Supply Chain Attack Linked to North Korean Hackers
+            </a>
+          </h3>
+
+          
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            Hackers pushed a poisoned arrayref version that added a dependency to fetch a malicious payload from a remote server. The post Rust Supply Chain…
+          </p>
+          
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: 52.25331783294678%"></div>
+            </div>
+
+            
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              Aug 21, 09:23 UTC
+            </p>
+            
+          </div>
+        </article>
+        
+      </div>
+      
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="border-t border-surface-700 mt-12 py-6">
+    <div class="max-w-7xl mx-auto px-4 text-center text-xs text-gray-600">
+      <p>
+        Generated by <span class="text-gray-400 font-mono"DailyOwned</span>
+        Monday, August 24 2026 at 04:16 UTC
+      </p>
+      <p class="mt-1">
+        Powered by <span class="text-gray-500">Ollama</span> ·
+        <a href="https://github.com/maksokami/DailyOwned" class="hover:text-gray-400 transition-colors">GitHub</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
