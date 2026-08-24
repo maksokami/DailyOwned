@@ -96,7 +96,8 @@ if [ "$PAGES_CHOICE" = "1" ]; then
         find "$PAGES_DIR" -maxdepth 1 ! -name '.git' ! -path "$PAGES_DIR" -exec rm -rf {} + 2>/dev/null || true
 
         # Add a placeholder index.html until the first pipeline run
-        cat > "$PAGES_DIR/index.html" << 'PLACEHOLDER'
+        mkdir -p "$PAGES_DIR/docs"
+        cat > "$PAGES_DIR/docs/index.html" << 'PLACEHOLDER'
 <!DOCTYPE html>
 <html><head><meta charset="UTF-8"><title>Security Digest — Coming Soon</title>
 <style>body{font-family:monospace;background:#0a0e14;color:#22c55e;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;text-align:center}</style>
