@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ title }} — {{ generated_at }}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50:  '#f0fdf4',
+              100: '#dcfce7',
+              400: '#4ade80',
+              500: '#22c55e',
+              600: '#16a34a',
+              900: '#14532d',
+            },
+            surface: {
+              900: '#0a0e14',
+              800: '#111827',
+              700: '#1f2937',
+              600: '#374151',
+              500: '#4b5563',
+            }
+          },
+          fontFamily: {
+            mono: ['JetBrains Mono', 'Fira Code', 'Consolas', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .tag-badge { display: inline-block; font-size: 0.65rem; padding: 1px 6px; border-radius: 4px; }
+    .score-bar { height: 3px; border-radius: 2px; transition: width 0.3s ease; }
+    .card-hover { transition: transform 0.15s ease, box-shadow 0.15s ease; }
+    .card-hover:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+    .impact-high   { background: #ef4444; }
+    .impact-medium { background: #f59e0b; }
+    .impact-low    { background: #6b7280; }
+    .source-pill { font-size: 0.7rem; font-family: 'JetBrains Mono', monospace; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #111827; }
+    ::-webkit-scrollbar-thumb { background: #374151; border-radius: 3px; }
+    .glow-green { box-shadow: 0 0 20px rgba(34,197,94,0.15); }
+    .glow-amber { box-shadow: 0 0 20px rgba(245,158,11,0.15); }
+  </style>
+</head>
+
+<body class="bg-surface-900 text-gray-200 min-h-screen">
+
+  <!-- ===== HEADER ===== -->
+  <header class="border-b border-surface-700 bg-surface-800 sticky top-0 z-50 backdrop-blur">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="text-brand-500 text-2xl font-bold font-mono">⬡</span>
+        <div>
+          <h1 class="text-white font-bold text-lg leading-tight">{{ title }}</h1>
+          <p class="text-gray-400 text-xs">{{ tagline }}</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <div class="text-right hidden sm:block">
+          <p class="text-xs text-gray-400">Generated</p>
+          <p class="text-xs text-gray-300 font-mono">{{ generated_at }}</p>
+        </div>
+        <div class="flex gap-2 text-xs">
+          <span class="bg-surface-700 px-2 py-1 rounded text-gray-300">
+            📡 {{ total_sources }} sources
+          </span>
+          <span class="bg-surface-700 px-2 py-1 rounded text-gray-300">
+            📰 {{ total_articles }} articles
+          </span>
+          <span class="bg-surface-700 px-2 py-1 rounded text-gray-300">
+            ⏱ {{ lookback_hours }}h window
+          </span>
+        </div>
+        <button onclick="document.documentElement.classList.toggle('dark')"
+                class="text-gray-400 hover:text-white text-lg" title="Toggle dark mode">☀</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+
+    <!-- ===== TOP ANALYSIS: Two Columns ===== -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
+
+      <!-- TOP CITED -->
+      <div class="bg-surface-800 rounded-xl border border-brand-500/30 glow-green overflow-hidden">
+        <div class="px-5 py-4 border-b border-surface-700 flex items-center gap-2">
+          <div>
+            <h2 class="text-white font-bold text-base">Top Cited Stories</h2>
+          </div>
+        </div>
+        <div class="divide-y divide-surface-700">
+          {% if top_cited %}
+            {% for cluster in top_cited %}
+            <div class="px-5 py-4 card-hover">
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="text-xs font-mono text-gray-500">#{{ loop.index }}</span>
+                  {% set impact_color = {
+                    'High':   'bg-red-900/50 text-red-400 border border-red-800',
+                    'Medium': 'bg-amber-900/50 text-amber-400 border border-amber-800',
+                    'Low':    'bg-gray-800 text-gray-400 border border-gray-700'
+                  } %}
+                  <span class="tag-badge {{ impact_color.get(cluster.impact, 'bg-gray-800 text-gray-400 border border-gray-700') }}">
+                    {{ cluster.impact }} Impact
+                  </span>
+                  <span class="tag-badge bg-brand-900/50 text-brand-400 border border-brand-800">
+                    {{ cluster.unique_sources }} sources
+                  </span>
+                </div>
+              </div>
+              <h3 class="text-white font-semibold text-sm mb-1">
+                <a href="{{ cluster.best_article.url }}" target="_blank" rel="noopener"
+                   class="hover:text-brand-400 transition-colors">
+                  {{ cluster.label if cluster.label else cluster.best_article.title }}
+                </a>
+              </h3>
+              {% if cluster.summary %}
+              <p class="text-gray-400 text-xs leading-relaxed mb-2">{{ cluster.summary }}</p>
+              {% endif %}
+              <div class="flex flex-wrap gap-1 mt-2">
+                {% for src in cluster.source_names %}
+                <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">{{ src }}</span>
+                {% endfor %}
+              </div>
+              <!-- Sub-articles -->
+              <div class="mt-3 space-y-1">
+                {% for art in cluster.articles[:4] %}
+                <a href="{{ art.url }}" target="_blank" rel="noopener"
+                   class="flex items-start gap-2 text-xs text-gray-400 hover:text-gray-200 transition-colors group">
+                  <span class="text-surface-500 group-hover:text-brand-500 mt-0.5">›</span>
+                  <span class="flex-1 truncate">{{ art.title }}</span>
+                  <span class="text-surface-500 shrink-0 font-mono">{{ art.source[:20] }}</span>
+                </a>
+                {% endfor %}
+                {% if cluster.articles|length > 4 %}
+                <p class="text-xs text-surface-500 pl-4">+ {{ cluster.articles|length - 4 }} more articles</p>
+                {% endif %}
+              </div>
+            </div>
+            {% endfor %}
+          {% else %}
+            <div class="px-5 py-8 text-center text-gray-500 text-sm">
+              <p class="text-2xl mb-2">🔍</p>
+              <p>No multi-source clusters found yet.</p>
+              <p class="text-xs mt-1">Try lowering <code>cluster_min_samples</code> in config.yaml.</p>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- TOP BLINDSPOTS -->
+      <div class="bg-surface-800 rounded-xl border border-amber-500/30 glow-amber overflow-hidden">
+        <div class="px-5 py-4 border-b border-surface-700 flex items-center gap-2">
+          <div>
+            <h2 class="text-white font-bold text-base">Top Blind Spots</h2>
+            <p class="text-gray-400 text-xs">High-relevance stories with minimal mainstream coverage</p>
+          </div>
+        </div>
+        <div class="divide-y divide-surface-700">
+          {% if top_blindspots %}
+            {% for article in top_blindspots %}
+            <div class="px-5 py-4 card-hover">
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="text-xs font-mono text-gray-500">#{{ loop.index }}</span>
+                  <span class="tag-badge bg-amber-900/50 text-amber-400 border border-amber-800">Blindspot</span>
+                  <span class="tag-badge bg-surface-700 text-gray-400 border border-surface-600">
+                    {{ "%.0f"|format(article.relevance_score * 100) }}% match
+                  </span>
+                </div>
+              </div>
+              <h3 class="text-white font-semibold text-sm mb-1">
+                <a href="{{ article.url }}" target="_blank" rel="noopener"
+                   class="hover:text-amber-400 transition-colors">
+                  {{ article.title }}
+                </a>
+              </h3>
+              {% if article.cluster_summary %}
+              <p class="text-gray-400 text-xs leading-relaxed mb-2">{{ article.cluster_summary }}</p>
+              {% elif article.summary %}
+              <p class="text-gray-400 text-xs leading-relaxed mb-2">{{ article.summary|truncate_words(200) }}</p>
+              {% endif %}
+              <div class="flex items-center gap-2 mt-2">
+                <span class="source-pill bg-surface-700 text-amber-400/70 px-2 py-0.5 rounded">{{ article.source }}</span>
+                {% for tag in article.tags[:3] %}
+                <span class="tag-badge bg-surface-700 text-gray-500">{{ tag }}</span>
+                {% endfor %}
+              </div>
+              <!-- Relevance score bar -->
+              <div class="mt-2">
+                <div class="flex justify-between text-xs text-gray-600 mb-1">
+                  <span>Relevance</span>
+                  <span class="font-mono">{{ "%.2f"|format(article.relevance_score) }}</span>
+                </div>
+                <div class="bg-surface-700 rounded h-1">
+                  <div class="score-bar bg-amber-500 rounded"
+                       style="width: {{ [article.relevance_score * 100, 100]|min }}%"></div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          {% else %}
+            <div class="px-5 py-8 text-center text-gray-500 text-sm">
+              <p class="text-2xl mb-2">📡</p>
+              <p>No blindspots detected in this cycle.</p>
+              <p class="text-xs mt-1">Add more liked articles to improve detection.</p>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GENERAL FEED ===== -->
+    <section>
+      <div class="flex items-center gap-3 mb-4">
+        <h2 class="text-white font-bold text-base">Full Feed</h2>
+        <span class="text-xs text-gray-500">{{ feed_articles|length }} articles, sorted by relevance</span>
+        <div class="flex-1 border-t border-surface-700"></div>
+      </div>
+
+      {% if feed_articles %}
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+        {% for article in feed_articles %}
+        <article class="bg-surface-800 rounded-lg border border-surface-700 p-4 card-hover flex flex-col">
+          <div class="flex items-center justify-between mb-2">
+            <span class="source-pill bg-surface-700 text-gray-400 px-2 py-0.5 rounded">
+              {{ article.source }}
+            </span>
+            <div class="flex items-center gap-1">
+              {% if article.cluster_id >= 0 %}
+              <span class="tag-badge bg-brand-900/30 text-brand-500/70 text-xs">clustered</span>
+              {% endif %}
+              <span class="text-xs font-mono text-gray-600">
+                {{ "%.0f"|format(article.relevance_score * 100) }}%
+              </span>
+            </div>
+          </div>
+
+          <h3 class="text-gray-100 font-semibold text-sm leading-snug mb-2 flex-1">
+            <a href="{{ article.url }}" target="_blank" rel="noopener"
+               class="hover:text-brand-400 transition-colors">
+              {{ article.title }}
+            </a>
+          </h3>
+
+          {% if article.summary %}
+          <p class="text-gray-500 text-xs leading-relaxed mb-3">
+            {{ article.summary|truncate_words(150) }}
+          </p>
+          {% endif %}
+
+          <div class="mt-auto">
+            <!-- Tags -->
+            {% if article.tags %}
+            <div class="flex flex-wrap gap-1 mb-2">
+              {% for tag in article.tags[:4] %}
+              <span class="tag-badge bg-surface-700 text-gray-500">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
+
+            <!-- Relevance bar -->
+            <div class="bg-surface-700 rounded h-0.5">
+              <div class="score-bar bg-brand-500/60 rounded"
+                   style="width: {{ [article.relevance_score * 100, 100]|min }}%"></div>
+            </div>
+
+            {% if article.published %}
+            <p class="text-xs text-gray-600 font-mono mt-1">
+              {{ article.published.strftime('%b %-d, %H:%M UTC') if article.published else '' }}
+            </p>
+            {% endif %}
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+      {% else %}
+        <div class="text-center py-12 text-gray-500">
+          <p class="text-3xl mb-3">📭</p>
+          <p class="font-medium">No articles in the general feed.</p>
+          <p class="text-sm mt-1">All relevant articles are featured in Top Cited or Blindspots above.</p>
+        </div>
+      {% endif %}
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="border-t border-surface-700 mt-12 py-6">
+    <div class="max-w-7xl mx-auto px-4 text-center text-xs text-gray-600">
+      <p>
+        Generated by <span class="text-gray-400 font-mono">llm-cs-news</span> ·
+        {{ generated_at }} ·
+        {{ total_sources }} sources · {{ total_articles }} articles processed
+      </p>
+      <p class="mt-1">
+        Powered by <span class="text-gray-500">Ollama</span> ·
+        <a href="https://github.com/maksokami/DailyOwned" class="hover:text-gray-400 transition-colors">GitHub</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

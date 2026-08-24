@@ -1,0 +1,72 @@
+# ================================================================
+#  liked_articles.txt
+#  Security interest profile — one entry per line.
+#
+#  Each line is a piece of text that represents something you
+#  find interesting. The embedding model reads these to build
+#  your "preference centroid" — the closer a new article is to
+#  this profile in semantic space, the higher it scores.
+#
+#  Guidelines:
+#   • Use article titles, topic phrases, or brief descriptions
+#   • Paste URLs directly — they'll be used as identifiers
+#   • More entries = better accuracy (aim for 20+)
+#   • You can add entries at any time; they take effect next run
+#
+#  Quick add:
+#    python src/feedback.py --like "topic or article title"
+#
+#  Run the onboarding wizard for guided setup:
+#    python src/feedback.py --onboard
+#
+# ================================================================
+Malicious MCP Servers Can Split Instructions to Make AI Coding Agents Exfiltrate Secrets
+A Malicious SIM Card Can Run Attacker Code Inside the Modems Behind Cellular IoT Devices
+Prompt Injections for Defense. Researchers from Tracebit on Monday said they found that placing prompt injections alongside passwords, cryptographic keys, and other secrets stored on Amazon Web Services was often all that was needed to shut down attacks from AI hacking agents. 
+The AI boomerang: Why rehiring is harder than letting go. After cutting staff in the hopes AI could replace their labor, many companies are now reversing course. But winning back spurned talent is its own challenge.
+Separating AI’s Technological Problems from Its Capitalism Problems. Americans—by a wide margin—say that AI is moving too fast and will have a negative effect on society.
+LLMs hit security plateau: Why AI code can't be trusted yet. 
+If the Markets Reject OpenAI and Anthropic, the US Should Nationalize Them
+Who’s Tracking You? Use This New Service to Find Out
+Amid AI-Driven Bug-Hunt Tsunami, NIST Looks to … AI
+Why AI Needs a “Genie Coefficient”
+12 pieces of advice from two tech-company CIOs for first-time CIOs
+F5 Breach Exposes BIG-IP Source Code — Nation-State Hackers Behind Massive Intrusion
+ThreatsDay Bulletin: $15B Crypto Bust, Satellite Spying, Billion-Dollar Smishing, Android RATs & More
+Npm Package Hides Malware in Steganographic QR Codes
+GPUHammer: New RowHammer Attack Variant Degrades AI Models on NVIDIA GPUs
+CISA's New Guidance for SIEM and SOAR Implementation
+Ukrainian Systems Hit by Cobalt Strike Via a Malicious Excel File
+Nissan reveals ransomware attack exposed 53,000 workers' social security numbers 
+Intel Discloses Max Severity Bug in Its AI Model Compression Software
+CoralRaider Malware Campaign Exploits CDN Cache to Spread Info-Stealers
+Attacker Social-Engineered Backdoor Code Into XZ Utils
+5 Attack Trends Organizations of All Sizes Should Be Monitoring
+CISO Corner: Evil SBOMs; Zero-Trust Pioneer Slams Cloud Security; MITRE's Ivanti Issue
+'Sandworm' Group Is Russia's Primary Cyberattack Unit in Ukraine
+Russian APT Deploys New 'Kapeka' Backdoor in Eastern European Attacks
+Hackers Target Middle East Governments with Evasive "CR4T" Backdoor
+Из дела Ивана Сафронова стало понятнее, как именно российские силовики взламывают компьютеры и телефоны
+CISA Issues New Directive for Patching Known Exploited Vulnerabilities
+Detecting Evasive Malware on IoT Devices Using Electromagnetic Emanations
+Top 15 Vulnerabilities Attackers Exploited Millions of Times to Hack Linux Systems
+How to Mitigate Microsoft Windows 10, 11 SeriousSAM Vulnerability
+HTTP/2 Implementation Errors Exposing Websites to Serious Risks
+IoT-Specific Malware Infections Jumped 700% Amid Pandemic
+New Top 20 Secure-Coding List Positions PLCs as Plant 'Bodyguards'
+Passwordstate Password Manager Update Hijacked to Install Backdoor on Thousands of PCs
+New NAT/Firewall Bypass Attack Lets Hackers Access Any TCP/UDP Service
+WPA3 Lessons (Security)
+Citrix Issues Critical Security Updates for its NetScaler Devices
+LoRaWAN for IoT: Beware Encryption Misconfigurations and Security Pitfalls
+Critical Zimbra RCE Flaw Now Actively Exploited in Attacks
+Elementor Pro Flaw Could Let Unauthenticated Attackers Upload PHP and Execute Code
+French Tax Authority Says Break-In Exposed Data of 600K, Including Some Private Messages
+AI data giant Alation confirms cyberattack
+Medusa Ransomware Gang Has Hit over 500 Organizations, CISA Warns
+Latvian Officials Resign After Cyberattack Exposes Data on 1.2 Milion People
+US Warns of AI-Powere Attacks on Siemens PLCs in Critical Infrastructure
+StopAndProtect Uses Nearly 2,000 Hacked WordPress Sites to Spread Malware and Steal Data
+Enterprise Applications Carry 4.31x More Critical and High Vulnerabilities
+CISA Urges Immediate Patching of Exploited Microsoft, VMware, Apple Vulnerabilities
+CareCloud Confirms 3.7M Patients had Their Medical Records Stolen in Data Breach

@@ -1,0 +1,16 @@
+[Unit]
+Description=Security News Intelligence Scheduler
+After=network.target
+
+[Service]
+Type=simple
+User=%i
+WorkingDirectory=/home/onosan/Documents/Scripts/llm-cs-news
+ExecStart=/home/onosan/Documents/Scripts/llm-cs-news/.venv/bin/python /home/onosan/Documents/Scripts/llm-cs-news/src/scheduler.py
+Restart=on-failure
+RestartSec=30
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

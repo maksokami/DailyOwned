@@ -1,0 +1,33 @@
+# ============================================================
+#  Dynamic Categories for LLM Tagging
+#  The LLM will read these descriptions to decide which tags
+#  to assign to incoming news articles.
+# ============================================================
+
+categories:
+  - name: "Cloud"
+    description: "Vulnerabilities, misconfigurations, or defense strategies in AWS, GCP, Azure, Kubernetes, and container orchestration."
+
+  - name: "Vulnerabilities"
+    description: "Newly disclosed CVEs, zero-day vulnerabilities, patch Tuesday updates, and proof-of-concept exploits."
+
+  - name: "ThreatIntel"
+    description: "Nation-state actors, advanced persistent threats, malware analysis, botnets, and espionage campaigns."
+
+  - name: "Ransomware"
+    description: "Ransomware gangs, encryption tactics, data leak sites, and incident response to ransomware."
+
+  - name: "DevSecOps"
+    description: "Application security, OWASP top 10, SAST/DAST, supply chain attacks, and secure CI/CD pipelines."
+
+  - name: "IAM"
+    description: "IAM, authentication bypass, credential stuffing, active directory exploits, and zero-trust."
+
+  - name: "Compliance"
+    description: "Cybersecurity regulations, compliance frameworks (CISA, NIST), surveillance, and legal actions against hackers."
+    
+  - name: "AI"
+    description: "Attacks or defense techniques and cyber incidents related to GenAI or LLMs usage."
+    
+  - name: "Quantum"
+    description: "New attacks possible with Quantum computers."
