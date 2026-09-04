@@ -21,7 +21,7 @@ feeds:
     url: "https://api.theregister.com/api/v1/article?orderBy=published&site_id=2&remapper=rss"
   
   - name: "TechCrunch"
-    url: "https://techcrunch.com/tag/rss/"
+    url: "https://techcrunch.com/rss"
   
   - name: "The Record"
     url: "https://therecord.media/feed"

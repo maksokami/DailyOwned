@@ -4,7 +4,7 @@
 
 # --- Ollama Settings ---
 ollama:
-  base_url: "http://localhost:11434"
+  base_url: "http://172.16.20.160:11434"
   # Model used for generating embeddings (must be an embedding model)
   embedding_model: "qllama/bge-m3:q8_0"
   # Model used for cluster summaries, topic labels, and blindspot analysis
@@ -32,7 +32,7 @@ top_cited_count: 5
 # Minimum relevance score to qualify as a blindspot
 blindspot_min_score: 0.65
 # Number of blindspot articles to feature
-blindspot_count: 5
+blindspot_count: 7
 
 # --- Schedule ---
 # Cron expression for the daily digest. Default: 7:00 AM
@@ -43,7 +43,7 @@ schedule:
 # --- Paths ---
 paths:
   # Path to your local clone of the GitHub Pages repository
-  github_pages_repo: "/home/youruser/pathto/DailyOwned"
+  github_pages_repo: "/media/usb2/GITHUB/DailyOwned"
   # Where the rendered HTML is written before publishing
   output_html: "./output/index.html"
   # Your liked articles seed file
